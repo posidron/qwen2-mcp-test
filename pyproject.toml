@@ -1,0 +1,33 @@
+[project]
+name = "qwen2-mcp-test"
+version = "0.1.0"
+description = "MCP project using Qwen2 model with smolagents"
+authors = [
+    {name = "Christoph Diehl",email = "1614333+posidron@users.noreply.github.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "smolagents[mcp]>=0.1.0",
+    "litellm>=1.18.3",
+    "mcp[cli] (>=1.9.0,<2.0.0)",
+    "yfinance>=0.2.37",
+    "fastapi>=0.109.0",
+    "uvicorn>=0.26.0"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/yourusername/qwen2-mcp-test"
+"Bug Tracker" = "https://github.com/yourusername/qwen2-mcp-test/issues"
+
+[tool.poetry]
+package-mode = false
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
